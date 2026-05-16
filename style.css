@@ -27,7 +27,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 25px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #d1d1d1;
 }
 nav #center-nav {
   display: flex;
@@ -74,19 +74,19 @@ main #top {
 main #top #Sunflower {
   position: absolute;
   top: 5%;
-  height: 35%;
+  height: 3.6vw;
 }
 main #top #Hibiscus {
   position: absolute;
   top: 10%;
   right: 0;
-  height: 30%;
+  height: 3.3vw;
 }
 main #top #Blossom {
   position: absolute;
-  bottom: -24%;
+  bottom: 30%;
   left: 21%;
-  height: 32%;
+  height: 3.4vw;
 }
 main #top h1 {
   width: 100%;
@@ -112,12 +112,12 @@ main #top div #left {
 main #top div #left h2 {
   font-weight: 600;
   letter-spacing: -0.5px;
-  font-size: 17px;
+  font-size: 1.05vw;
 }
 main #top div #left h3 {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 2vw;
   line-height: 1.3;
 }
 main #top div #right {
@@ -132,7 +132,7 @@ main #top div #right img {
   height: 12vw;
 }
 main #center-grid {
-  margin-top: -4.5vw;
+  margin-top: -4.8vw;
   display: grid;
   grid-template-columns: 0.95fr 0.95fr 1.2fr 0.95fr 0.95fr;
   grid-template-rows: 0.375fr 1.1fr 1.2fr 1fr 1.2fr 1.1fr 0.375fr;
@@ -167,6 +167,14 @@ main #center-grid .images:nth-child(3) {
   grid-column: 3/4;
   grid-row: 1/8;
   background-image: url("./Assets/image-3.jpg");
+  position: relative;
+}
+main #center-grid .images:nth-child(3) img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -44%);
+  height: 10vw;
 }
 main #center-grid .images:nth-child(4) {
   grid-column: 4/5;
@@ -178,6 +186,15 @@ main #center-grid .images:nth-child(5) {
   grid-column: 5/6;
   grid-row: 3/6;
   background-image: url("./Assets/image-5.png");
+  position: relative;
+}
+main #center-grid .images:nth-child(5) h2 {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: 600;
 }
 main #center-grid .images:nth-child(6) {
   grid-column: 2/3;
@@ -191,4 +208,74 @@ main #center-grid .images:nth-child(7) {
   background-image: url("https://i.pinimg.com/736x/3e/25/09/3e2509729e0cfe4700cbc22787e64f12.jpg");
   background-position: 5% 10%;
   background-size: 150% auto;
+}
+main #bottom {
+  display: flex;
+  width: 100%;
+  background-color: wheat;
+}
+main #bottom #bottom-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5vw;
+  width: 38%;
+  margin-top: -6vw;
+  overflow: hidden;
+  position: relative;
+}
+main #bottom #bottom-left .Quotes {
+  height: 3vw;
+}
+main #bottom #bottom-left p {
+  font-weight: 600;
+  line-height: 2.2;
+  font-size: 1.1vw;
+  letter-spacing: -0.5px;
+}
+main #bottom #bottom-left .Signature {
+  height: 6vw;
+  margin-left: -1vw;
+  transform: translate(0, -10px);
+}
+main #bottom #bottom-left .Sakura {
+  position: absolute;
+  height: 3.2vw;
+  bottom: 25%;
+  right: 0;
+}
+main #bottom #bottom-center {
+  width: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+main #bottom #bottom-center button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px 24px;
+  font-size: 12px;
+  border: 1px solid rgb(202, 202, 202);
+  font-family: Outfit;
+}
+main #bottom #bottom-center button h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+main #bottom #bottom-center button i {
+  font-size: 20px;
+  font-weight: 600;
+}
+main #bottom #bottom-right {
+  width: 38%;
+  margin-top: -4.2vw;
+  background-color: royalblue;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
 }
