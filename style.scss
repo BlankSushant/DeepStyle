@@ -222,7 +222,7 @@ main {
 
             position: relative;
 
-            h2{
+            h2 {
                 position: absolute;
                 bottom: -20%;
                 left: 50%;
@@ -252,8 +252,9 @@ main {
     #bottom {
         display: flex;
         width: 100%;
+        position: relative;
         // height:10vw;
-        background-color: wheat;
+        // background-color: wheat;
 
         #bottom-left {
             display: flex;
@@ -309,9 +310,9 @@ main {
                 border-radius: 15px;
                 padding: 20px 24px;
                 font-size: 12px;
-                border: 1px solid rgb(202, 202, 202);
+                border: 1px solid rgb(240, 240, 240);
                 font-family: Outfit;
-
+                box-shadow: 0px 10px 30px 1px rgba(167, 167, 167, 0.228);
                 h3 {
                     text-transform: uppercase;
                     font-weight: 600;
@@ -327,14 +328,106 @@ main {
         #bottom-right {
             width: 38%;
             margin-top: -4.2vw;
+            position: relative;
+            // background-color: royalblue;
 
-            background-color: royalblue;
 
-            display: flex;
+            #bottom-right-content {
+                display: flex;
+                position: relative;
+                height: 12vw;
+                // background-color: grey;
+                gap: 20px;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding-top: 60px;
+                padding-left: 20%;
 
-            align-items: flex-end;
-            gap: 20px;
-        
+                #bottom-right-left {
+                    min-width: 70%;
+
+                    #bottom-right-up {
+                        width: 100%;
+                        height: fit-content;
+                        display: flex;
+                        gap: 8px;
+                        justify-content: center;
+                        align-items: center;
+
+                        h2 {
+                            font-size: 0.8vw;
+                            font-weight: 600;
+                        }
+                    }
+
+                    #bottom-right-down {
+                        display: flex;
+                        min-width: 100%;
+                        gap: 11%;
+                        margin-top: 10px;
+
+                        #bottom-right-down-number {
+                            display: flex;
+                            align-items: flex-end;
+
+                            h1 {
+                                line-height: 0.85;
+                                font-size: 4vw;
+                                font-weight: 200;
+                            }
+                        }
+
+                        #bottom-right-down-texts {
+                            display: flex;
+                            align-items: flex-end;
+
+                            h3 {
+                                font-family: Outfit;
+                                font-weight: 500;
+                                font-size: 1.56vw;
+                                line-height: 1.1;
+                            }
+                        }
+                    }
+                }
+
+                #btn {
+                    height: 100%;
+                    display: flex;
+                    padding: 4px;
+                    align-items: flex-end;
+
+                    button {
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background-color: black;
+                        color: white;
+                        border: none;
+                    }
+                }
+
+                #Wilted-Rose {
+                    height: 2.8vw;
+                    position: absolute;
+                    top: 8%;right: 15%;
+                }
+
+            }
+
+            #skew-div {
+                height: 30px;
+                width: 20px;
+                background-color: #edd4a8;
+                position: absolute;
+                top: 45%;
+                left: 4%;
+                transform: skew(30deg, 0);
+            }
+
         }
     }
 }
