@@ -212,7 +212,7 @@ main #center-grid .images:nth-child(7) {
 main #bottom {
   display: flex;
   width: 100%;
-  background-color: wheat;
+  position: relative;
 }
 main #bottom #bottom-left {
   display: flex;
@@ -260,8 +260,9 @@ main #bottom #bottom-center button {
   border-radius: 15px;
   padding: 20px 24px;
   font-size: 12px;
-  border: 1px solid rgb(202, 202, 202);
+  border: 1px solid rgb(240, 240, 240);
   font-family: Outfit;
+  box-shadow: 0px 10px 30px 1px rgba(167, 167, 167, 0.228);
 }
 main #bottom #bottom-center button h3 {
   text-transform: uppercase;
@@ -274,8 +275,88 @@ main #bottom #bottom-center button i {
 main #bottom #bottom-right {
   width: 38%;
   margin-top: -4.2vw;
-  background-color: royalblue;
+  position: relative;
+}
+main #bottom #bottom-right #bottom-right-content {
+  display: flex;
+  position: relative;
+  height: 12vw;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 60px;
+  padding-left: 20%;
+}
+main #bottom #bottom-right #bottom-right-content #bottom-right-left {
+  min-width: 70%;
+}
+main #bottom #bottom-right #bottom-right-content #bottom-right-left #bottom-right-up {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+main #bottom #bottom-right #bottom-right-content #bottom-right-left #bottom-right-up h2 {
+  font-size: 0.8vw;
+  font-weight: 600;
+}
+main #bottom #bottom-right #bottom-right-content #bottom-right-left #bottom-right-down {
+  display: flex;
+  min-width: 100%;
+  gap: 11%;
+  margin-top: 10px;
+}
+main #bottom #bottom-right #bottom-right-content #bottom-right-left #bottom-right-down #bottom-right-down-number {
   display: flex;
   align-items: flex-end;
-  gap: 20px;
+}
+main #bottom #bottom-right #bottom-right-content #bottom-right-left #bottom-right-down #bottom-right-down-number h1 {
+  line-height: 0.85;
+  font-size: 4vw;
+  font-weight: 200;
+}
+main #bottom #bottom-right #bottom-right-content #bottom-right-left #bottom-right-down #bottom-right-down-texts {
+  display: flex;
+  align-items: flex-end;
+}
+main #bottom #bottom-right #bottom-right-content #bottom-right-left #bottom-right-down #bottom-right-down-texts h3 {
+  font-family: Outfit;
+  font-weight: 500;
+  font-size: 1.56vw;
+  line-height: 1.1;
+}
+main #bottom #bottom-right #bottom-right-content #btn {
+  height: 100%;
+  display: flex;
+  padding: 4px;
+  align-items: flex-end;
+}
+main #bottom #bottom-right #bottom-right-content #btn button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  border: none;
+}
+main #bottom #bottom-right #bottom-right-content #Wilted-Rose {
+  height: 2.8vw;
+  position: absolute;
+  top: 8%;
+  right: 15%;
+}
+main #bottom #bottom-right #skew-div {
+  height: 30px;
+  width: 20px;
+  background-color: #edd4a8;
+  position: absolute;
+  top: 45%;
+  left: 4%;
+  transform: skew(30deg, 0);
 }
